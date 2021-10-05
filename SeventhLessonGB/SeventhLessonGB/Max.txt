@@ -1,0 +1,4 @@
+Name: Max
+Age: 24
+Experiance: 3
+Rank: B
