@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <array>
 #include <string>
-#define ARRAY_SIZE 9
+#define ARRAY_SIZE 10
 
 //ДЗ 7 п.1,5:
 namespace float_array
@@ -13,7 +13,6 @@ namespace float_array
 
 //ДЗ 7 п.2:
 void define_check();
-
 
 //ДЗ 7 п.4:
 #pragma pack(push, 1)
@@ -30,8 +29,9 @@ void create_new_empolee();
 
 //ДЗ 7 п.3:
 void init_array(std::array<int, ARRAY_SIZE> &my_array);
+void r_init_array(std::array<int, ARRAY_SIZE> &my_array);
 void print_array(std::array<int, ARRAY_SIZE>& my_array);
-void quick_sort_array (std::array<int, ARRAY_SIZE> &my_array, int size_array);
+void quick_sort_array (std::array<int, ARRAY_SIZE> &my_array, int start, int end);
 
 
 

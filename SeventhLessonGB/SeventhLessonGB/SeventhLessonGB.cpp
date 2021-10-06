@@ -5,38 +5,33 @@
 
 /*
 3.
-Задайте массив типа int.
-Пусть его размер задается через
-директиву препроцессора #define.
-Инициализируйте его через
-ввод с клавиатуры.
-Напишите для него свою функцию
-сортировки
 Реализуйте перестановку
 элементов как макрокоманду SwapINT(a, b), вызывайте ее из
-цикла сортировки.
+цикла сортировки. (Уточнить, подходит ли команда std::swap?)
 */
 
 int main()
 {
-    
+    //ДЗ 7 п.1,5:
     std::array<float, 15> f_array;
     float_array::array_init(f_array);
     float_array::array_print(f_array);
     float_array::array_check(f_array);
-    
+
+    //ДЗ 7 п.2:
     define_check();
 
+    //ДЗ 7 п.4:
     create_new_empolee();
-    
 
-    /* TODO quick_sort
+    //ДЗ 7 п.3:
     std::array<int, ARRAY_SIZE> my_array;
-    init_array(my_array);
+    r_init_array(my_array); // Для инициализации массива случайными числами
+    //init_array(my_array);
     print_array(my_array);
-    quick_sort_array(my_array, ARRAY_SIZE);
+    quick_sort_array(my_array, 0, ARRAY_SIZE);
     print_array(my_array);
-    */
+    
     
     return 0;
 }
